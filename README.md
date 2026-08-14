@@ -10,19 +10,15 @@
 This application takes a picture of a person, and converts the outlines of the picture into scaled Gcode for use on pen plotter or 3d printer with pen plotter attachment.
 
 ## Installation
-Create and activate a virtual environment:
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-```
 Clone repository
 ```bash
 git clone https://github.com/horatioh13/Portrait-Draw.git
 ```
-Install requirements
+Create virtual environment and install requirements:
 ```bash
-pip install -r requirements.txt
-```
+uv venv --python 3.12
+source .venv/bin/activate
+uv pip install -r requirements.txt```
 
 ## Usage
 Run default script by pulling image from thispersondoesnotexist.com 
